@@ -1,0 +1,12 @@
+{
+    "builds": [
+        {
+            "src": "example1.js",
+            "use": "@vercel/node"
+        }
+    ],
+    "scripts": {
+        "build": "yarn install && apt-get update && apt-get install -y libnss3",
+        "start": "node example1.js"
+    }
+}
